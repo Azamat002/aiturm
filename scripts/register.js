@@ -56,7 +56,7 @@ signUpForm.addEventListener('submit', (e) => {
         })
         .catch((error) => {
             // Handle any errors that occur during sign-up
-            console.log(error.message);
+            alert(error.message);
         });
 });
 
