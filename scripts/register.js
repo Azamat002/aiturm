@@ -100,4 +100,31 @@ adminsRef.once('value', (snapshot) => {
     }
 });
 
+// recover pass
+
+document.getElementById('forgetPass').addEventListener('click', function (event) {
+    event.preventDefault(); // Prevent the default behavior of following the link
+
+    var email = document.getElementById('emailInput').value;
+    if (email) {
+        sendPasswordResetEmail(email);
+    } else {
+        // Handle the case when no email is entered
+        alert('Please enter your email');
+    }
+});
+
+function sendPasswordResetEmail(email) {
+    firebase.auth().sendPasswordResetEmail(email)
+        .then(function () {
+            // Password reset email sent
+            // You can redirect the user to a success page or show a notification
+            alert('Password reset email sent to ' + email);
+        })
+        .catch(function (error) {
+            // An error occurred
+            // You can display the error message to the user
+            alert('Error sending password reset email: ' + error.message);
+        });
+}
 
