@@ -300,9 +300,9 @@ usersRef.once('value', function (snapshot) {
                 // Удаляем пользователя из Firebase Authentication
                 var user = firebase.auth().currentUser;
                 user.delete().then(function () {
-                    console.log("User removed from Firebase Authentication");
+                    alert("User removed from Firebase Authentication");
                 }).catch(function (error) {
-                    console.error("Error while deleting user from Firebase Authentication:", error);
+                    alert("Error while deleting user from Firebase Authentication:", error);
                 });
 
                 // Удаляем строку с пользователем из таблицы
@@ -327,7 +327,7 @@ logoutButton.addEventListener('click', () => {
         })
         .catch((error) => {
             // Handle any errors that occur during logout
-            console.log(error.message);
+            alert(error.message);
         });
 });
 
