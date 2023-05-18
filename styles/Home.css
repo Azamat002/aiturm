@@ -862,6 +862,8 @@
   min-height: 590px;
   pointer-events: auto;
   background-image: url("../images/QR-1.png");
+  /*background-image: url("../images/QR-1.png");*/
+  /*background-image: url("../images/QR-1.png");*/
   background-position: 50% 50%;
 }
 
