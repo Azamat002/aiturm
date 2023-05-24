@@ -7,7 +7,7 @@
 }
 
 body {
-    background: linear-gradient(315deg, #8d5185 0%, #a1bafe 74%);
+    /*background: linear-gradient(315deg, #8d5185 0%, #a1bafe 74%);*/
     font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
@@ -27,137 +27,44 @@ body {
 .header {
     background-color: #f7f7f7;
     color: #ba4fab;
-    border-radius: 1px solid #f0f0f0;
+    border: 1px solid #f0f0f0;
     padding: 20px 40px;
 }
 
-.form {
-    padding: 30px 40px;
-}
 
-.form-control {
-    margin-bottom: 10px;
-    padding-bottom: 20px;
-    position: relative;
-}
 
-.form-control label {
-    display: inline-block;
-    margin-bottom: 5px;
-}
-
-.form-control input {
-    border: transparent;
-    outline: 2px dotted #f0f0f0;
-    border-radius: 4px;
-    display: block;
-    width: 100%;
-    padding: 10px;
-    font-size: 14px;
-    font-family: inherit;
-    transition: all 0.3s ease-in;
-}
-
-input:focus {
-    border: transparent;
-    outline: 2px dotted #ba4fab;
-}
-
-.form-control.success input {
-    border-color: #2ecc71;
-}
-
-.form-control.error input {
-    border-color: #e74c3c;
-}
-
-.form-control i {
-    position: absolute;
-    top: 37px;
-    right: 10px;
-    visibility: hidden;
-}
-
-.form-control.success i.fa-check-circle {
-    visibility: visible;
-    color: #2ecc71;
-}
-
-.form-control.error i.fa-exclamation-circle {
-    visibility: visible;
-    color: #e74c3c;
-}
-
-.form-control small {
-    position: absolute;
-    bottom: 0;
+.modal {
+    position: fixed;
+    top: 0;
     left: 0;
-    visibility: hidden;
-}
-
-.form-control.error small {
-    visibility: visible;
-    color: #e74c3c;
-}
-
-.form button {
-    border: none;
-    color: #fff;
-    display: block;
     width: 100%;
-    padding: 10px;
-    font-size: 16px;
-    font-family: inherit;
-    border-radius: 4px;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.modal-close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.modal-close button {
+    padding: 5px 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 3px;
     cursor: pointer;
-    transition: all 0.4s linear;
-}
-.submitButton{
-    background-color: #8d5185;
-}
-.cancelButton{
-    background-color: #F5CB5C;
 }
 
-.form button:hover {
-    background-color: #b2239f;
-}
-
-.message {
-    padding: 30px;
-    font-size: 2rem;
-    color: #b2239f;
-    text-align: center;
-    animation-name: fade-in;
-    -webkit-animation-name: fade-in;
-    animation-duration: 1.5s;
-    -webkit-animation-duration: 1.5s;
-    animation-timing-function: ease-in-out;
-    -webkit-animation-timing-function: ease-in-out;
-    animation-fill-mode: forwards;
-    -webkit-animation-fill-mode: forwards;
-    animation-direction: alternate;
-    -webkit-animation-direction: alternate;
-}
-
-.hidden {
-    display: none;
-}
-
-@keyframes fade-in {
-    from {
-        transform: rotate(0deg) scale(0) skew(0deg) translateY(30px);
-    }
-    to {
-        transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
-    }
-}
-
-@-webkit-keyframes fade-in {
-    from {
-        -webkit-transform: rotate(0deg) scale(0) skew(0deg) translateY(30px);
-    }
-    to {
-        -webkit-transform: rotate(0deg) scale(1) skew(0deg) translateY(0);
-    }
+.modal-close button:hover {
+    background-color: #aaa;
 }
