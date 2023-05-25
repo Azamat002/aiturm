@@ -1,0 +1,216 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="styles/EditForm.css">
+    <link rel="shortcut icon" href="images/icon.png" type="image/x-icon">
+    <title>Edit</title>
+    <script src="scripts/admin.js"></script>
+</head>
+<body>
+мынау негищи котак жеген ангиме
+<div class="modal row">
+    <div class="modal-content col-md-12">
+        <form id="form" class="form" method="post">
+            <h1>Edit form</h1>
+            <div class="form-column">
+                <label for="username">Username</label>
+                <input id="username" type="text" name="username" >
+
+                <label for="username">Name</label>
+                <input type="text" name="name" >
+
+                <label for="username">Email</label>
+                <input type="email" name="email" >
+
+                <label for="username">Gender</label>
+                <div class="genders">
+                    <input type="radio" name="gender" class="light" value="Male">
+                    <label>Male</label><br>
+                    <input type="radio" name="gender" class="light" value="Female">
+                    <label>Female</label>
+                </div>
+
+                <label for="username">Group</label>
+                <input type="text" name="group" >
+
+                <label for="username">Phone</label>
+                <input type="tel" name="phone" >
+
+                <label for="username">Bio</label>
+                <textarea id="bio" name="user_bio"></textarea>
+
+                <label for="username">Specialization</label>
+                <select name="spec" id="spec">
+                    <optgroup label="Information technologies">
+                        <option value="Computer Science">Computer Science</option>
+                        <option value="Software Engineering">Software Engineering</option>
+                        <option value="Big Data Analysis">Big Data Analysis</option>
+                        <option value="Industrial Automation">Industrial Automation</option>
+                        <option value="Media Technologies">Media Technologies</option>
+                    </optgroup>
+                    <optgroup label="Information security">
+                        <option value="Cyber Security">Cyber Security</option>
+                    </optgroup>
+                    <optgroup label="Communication technologies">
+                        <option value="Telecommunication Systems">Telecommunication Systems</option>
+                        <option value="Smart Technologies">Smart Technologies</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="form-actions">
+                <button type="submit">Save</button>
+                <button>Close</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+<!--<div class="container">-->
+<!--    <div class="header">-->
+<!--        <h2>Edit form</h2>-->
+<!--    </div>-->
+<!--    <form class="form" id="form">-->
+<!--        <div class="form-control">-->
+<!--            <label for="">Username</label>-->
+<!--            <input type="text" placeholder="username" id="username">-->
+
+<!--            <small>Error message</small>-->
+<!--        </div>-->
+<!--        <div class="form-control">-->
+<!--            <label for="">Name</label>-->
+<!--            <input type="email" placeholder="Name and Surname" id="email">-->
+
+<!--            <small>Error message</small>-->
+<!--        </div>-->
+<!--        <div class="form-control">-->
+<!--            <label for="">Email</label>-->
+<!--            <input type="email" placeholder="info@gmail.com" id="email">-->
+
+<!--            <small>Error message</small>-->
+<!--        </div>-->
+<!--        <div class="form-control">-->
+<!--            <label for="genderMale">Male</label>-->
+<!--            <input type="radio" id="genderMale" name="gender" value="MALE">-->
+
+<!--            <label for="genderFemale">Female</label>-->
+<!--            <input type="radio" id="genderFemale" name="gender" value="FEMALE">-->
+
+
+<!--            <small>Error message</small>-->
+<!--        </div>-->
+<!--        <div class="form-control">-->
+<!--            <label for="">Group</label>-->
+<!--            <input type="email" placeholder="Group" id="email">-->
+
+<!--            <small>Error message</small>-->
+<!--        </div>-->
+<!--        <div class="form-control">-->
+<!--            <label for="">Specialization</label>-->
+<!--            <input type="email" placeholder="Specialization" id="email">-->
+
+<!--            <small>Error message</small>-->
+<!--        </div>-->
+<!--        <div class="form-control">-->
+<!--            <label for="">Bio</label>-->
+<!--            <input type="email" placeholder="Bio" id="email">-->
+
+<!--            <small>Error message</small>-->
+<!--        </div>-->
+
+<!--        <button id="submitBtn">Submit</button><br>-->
+<!--        <button id="cancelBtn">Cancel</button>-->
+
+<!--    </form>-->
+<!--    <div class="message hidden">-->
+<!--        <p>Submitted!</p>-->
+<!--    </div>-->
+
+<!--</div>-->
+</body>
+
+<script src="scripts/EditForm.js    "></script>
+
+</html>
+
+<!--<html>-->
+<!--<head>-->
+<!--    <meta charset="utf-8">-->
+<!--    <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
+<!--    <title>Sign Up Form</title>-->
+<!--    <link rel="stylesheet" href="https://codepen.io/gymratpacks/pen/VKzBEp#0">-->
+<!--    <link href='https://fonts.googleapis.com/css?family=Nunito:400,300' rel='stylesheet' type='text/css'>-->
+<!--    <link rel="stylesheet" href="styles/EditForm.css">-->
+<!--</head>-->
+<!--<body>-->
+<!--<div class="row">-->
+<!--    <div class="col-md-12">-->
+<!--        <form action="index.html" method="post">-->
+<!--            <h1> Sign Up </h1>-->
+
+<!--            <fieldset>-->
+
+<!--                <legend><span class="number">1</span> Your Basic Info</legend>-->
+
+<!--                <label for="name">Name:</label>-->
+<!--                <input type="text" id="name" name="user_name">-->
+
+<!--                <label for="email">Email:</label>-->
+<!--                <input type="email" id="mail" name="user_email">-->
+
+<!--                <label for="password">Password:</label>-->
+<!--                <input type="password" id="password"       name="user_password">-->
+
+<!--                <label>Age:</label>-->
+<!--                <input type="radio" id="under_13" value="under_13" name="user_age"><label for="under_13" class="light">Under 13</label><br>-->
+<!--                <input type="radio" id="over_13" value="over_13" name="user_age"><label for="over_13" class="light">Over 13</label>-->
+
+<!--            </fieldset>-->
+<!--            <fieldset>-->
+
+<!--                <legend><span class="number">2</span> Your Profile</legend>-->
+
+<!--                <label for="bio">Bio:</label>-->
+<!--                <textarea id="bio" name="user_bio"></textarea>-->
+
+
+
+<!--                <label for="job">Job Role:</label>-->
+<!--                <select id="job" name="user_job">-->
+<!--                    <optgroup label="Web">-->
+<!--                        <option value="frontend_developer">Front-End Developer</option>-->
+<!--                        <option value="php_developer">PHP Developer</option>-->
+<!--                        <option value="python_developer">Python Developer</option>-->
+<!--                        <option value="rails_developer">Rails Developer</option>-->
+<!--                        <option value="web_designer">Web Designer</option>-->
+<!--                        <option value="wordpress_developer">Wordpress Developer</option>-->
+<!--                    </optgroup>-->
+<!--                    <optgroup label="Mobile">-->
+<!--                        <option value="android_developer">Android Developer</option>-->
+<!--                        <option value="ios_developer">IOS Developer</option>-->
+<!--                        <option value="mobile_designer">Mobile Designer</option>-->
+<!--                    </optgroup>-->
+<!--                    <optgroup label="Business">-->
+<!--                        <option value="business_owner">Business Owner</option>-->
+<!--                        <option value="freelancer">Freelancer</option>-->
+<!--                    </optgroup>-->
+<!--                </select>-->
+
+<!--                <label>Interests:</label>-->
+<!--                <input type="checkbox" id="development" value="interest_development" name="user_interest"><label class="light" for="development">Development</label><br>-->
+<!--                <input type="checkbox" id="design" value="interest_design" name="user_interest"><label class="light" for="design">Design</label><br>-->
+<!--                <input type="checkbox" id="business" value="interest_business" name="user_interest"><label class="light" for="business">Business</label>-->
+
+<!--            </fieldset>-->
+
+<!--            <button type="submit">Sign Up</button>-->
+
+<!--        </form>-->
+<!--    </div>-->
+<!--</div>-->
+
+<!--</body>-->
+<!--</html>-->

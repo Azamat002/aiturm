@@ -1,0 +1,140 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    color: #384047;
+}
+
+.modal {
+    margin-top: 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    display: grid;
+    background-color: white;
+    border-radius: 15px;
+    overflow-y: auto; /* Enable vertical scrolling */
+    max-height: 90%; /* Set maximum height for the content */
+    padding: 20px; /* Add padding for better appearance */
+}
+
+.modal-content::-webkit-scrollbar {
+    width: 0.5em; /* Set the width of the scrollbar */
+}
+
+.modal-content::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Set the background color of the scrollbar track */
+}
+
+.modal-content::-webkit-scrollbar-thumb {
+    background-color: #888; /* Set the color of the scrollbar thumb */
+}
+
+.modal-content::-webkit-scrollbar-thumb:hover {
+    background-color: #555; /* Set the color of the scrollbar thumb on hover */
+}
+
+.modal-close {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 10px;
+}
+
+.form-column {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.form-column > * {
+    margin-bottom: 10px;
+}
+
+.form-actions {
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.form button {
+    padding: 10px 25px 10px 25px;
+    color: #FFF;
+    background-color: #ccc6be;
+    font-size: 18px;
+    text-align: center;
+    font-style: normal;
+    font-weight: bold;
+    border-radius: 5px;
+    width: 100%;
+    border: 1px solid #d3cebc;
+    border-width: 1px 1px 3px;
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+    margin-bottom: 10px;
+}
+
+.form button:hover {
+    background-color: #7a7676;
+    opacity: 0.8;
+}
+
+#form {
+    max-width: 600px;
+    padding: 10px 20px;
+    background: #f4f7f8;
+    border-radius: 8px;
+}
+
+h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+textarea,
+select {
+    border: none;
+    font-size: 16px;
+    height: auto;
+    outline: 0;
+    padding: 15px;
+    width: 100%;
+    background-color: #e8eeef;
+    color: #171716;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
+    margin-bottom: 30px;
+}
+
+.genders {
+    display: inline;
+    font-weight: 300;
+}
+
+*,
+*:before,
+*:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+@media screen and (min-width: 480px) {
+    form {
+        max-width: 480px;
+    }
+}
+
+
+.genderDiv{
+    display: inline-grid;
+
+}
